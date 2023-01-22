@@ -1,5 +1,5 @@
 import todoLogo from './assets/todo-logo.svg'
-import './App.css'
+import styles from './styles/App.module.css'
 import { CheckCircle, Circle, PlusCircle, Trash } from 'phosphor-react'
 
 export function App() {
@@ -9,7 +9,7 @@ export function App() {
 
   return (
     <div className="App">
-      <div className="wrapper">
+      <div className={styles.wrapper} >
         <header>
           <img src={todoLogo} alt="Logo todo list" />
         </header>
