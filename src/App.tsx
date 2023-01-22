@@ -18,18 +18,18 @@ export function App() {
           <form className={styles.new_task_form}>
             <input type="text" placeholder='Adicione uma nova tarefa' />
             <button type="submit" onClick={addTask} >
-              Criar <PlusCircle size={24} />
+              Criar <PlusCircle size={28} />
             </button>
           </form>
 
-          <div className="tasks_counter">
+          <div className={styles.tasks_counter} >
             <div>
-              <p>Tarefas criadas</p>
+              <strong>Tarefas criadas</strong>
               <span>0</span>
             </div>
 
             <div>
-              <p>Tarefas concluídas</p>
+              <strong>Tarefas concluídas</strong>
               <span>0</span>
             </div>
           </div>
