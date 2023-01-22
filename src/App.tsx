@@ -15,10 +15,10 @@ export function App() {
         </header>
 
         <main>
-          <form>
+          <form className={styles.new_task_form}>
             <input type="text" placeholder='Adicione uma nova tarefa' />
             <button type="submit" onClick={addTask} >
-              Criar <PlusCircle size={32} />
+              Criar <PlusCircle size={24} />
             </button>
           </form>
 

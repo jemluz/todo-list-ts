@@ -26,3 +26,52 @@
 
   padding: 6.75rem 0;
 }
+
+.new_task_form {
+  display: flex;
+  gap: 16px;
+}
+
+.new_task_form input {
+  width: 37.375rem;
+  height: 3.375rem;
+
+  color: var(--gray-200);
+  background: var(--gray-400);
+  border: 1px solid transparent;
+}
+
+.new_task_form input:hover {
+  border: 1px solid var(--blue-500);
+}
+
+.new_task_form button {
+  width: 6.125rem;
+  height: 3.375rem;
+
+  background: var(--blue-500);
+  color: var(--white);
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+}
+
+/*
+disabled 
+background: var(--black);
+color: var(--gray-200);
+*/
+
+.new_task_form button:hover {
+  box-shadow: 0 0 0 1px transparent;
+  background: var(--blue-600);
+}
+
+.new_task_form button:focus {
+  box-shadow: 0 0 0 1px var(--blue-600);
+}
+
+.new_task_form button svg {
+  margin-left: 8px;
+}
