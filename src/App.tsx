@@ -21,6 +21,17 @@ export function App() {
               Criar <PlusCircle size={32} />
             </button>
           </form>
+          <div className="tasks_counter">
+            <div>
+              <p>Tarefas criadas</p>
+              <span>0</span>
+            </div>
+
+            <div>
+              <p>Tarefas concluídas</p>
+              <span>0</span>
+            </div>
+          </div>
         </main>
       </div>
     </div>
