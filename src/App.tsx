@@ -1,6 +1,6 @@
 import todoLogo from './assets/todo-logo.svg'
 import './App.css'
-import { PlusCircle } from 'phosphor-react'
+import { CheckCircle, Circle, PlusCircle, Trash } from 'phosphor-react'
 
 export function App() {
   function addTask() {
@@ -21,6 +21,7 @@ export function App() {
               Criar <PlusCircle size={32} />
             </button>
           </form>
+
           <div className="tasks_counter">
             <div>
               <p>Tarefas criadas</p>
@@ -30,6 +31,23 @@ export function App() {
             <div>
               <p>Tarefas concluídas</p>
               <span>0</span>
+            </div>
+          </div>
+
+          <div className='empty_tasks'>
+            <img src="" alt="" />
+            <div>
+              <p>Você ainda não tem tarefas cadastradas</p>
+              <p>Crie tarefas e organize seus itens a fazer</p>
+            </div>
+          </div>
+
+          <div className="tasks_list">
+            <div className='task'>
+              {/* <CheckCircle size={28} /> */}
+              <Circle size={28} />
+              <p>Dar banho nos gatos</p>
+              <Trash size={24} />
             </div>
           </div>
         </main>
