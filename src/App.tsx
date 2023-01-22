@@ -10,7 +10,7 @@ export function App() {
   return (
     <div className="App">
       <div className={styles.wrapper} >
-        <header>
+        <header className={styles.header} >
           <img src={todoLogo} alt="Logo todo list" />
         </header>
 

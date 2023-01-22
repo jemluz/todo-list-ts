@@ -18,3 +18,11 @@
     grid-template-columns: 1fr;
   }
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6.75rem 0;
+}
