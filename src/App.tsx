@@ -41,11 +41,13 @@ export function App() {
             </div>
           </div>
 
-          <div className="tasks_list">
-            <div className='task'>
-              {/* <CheckCircle size={28} /> */}
-              <Circle size={28} />
-              <p>Dar banho nos gatos</p>
+          <div className={styles.tasks_list}>
+            <div className={styles.task}>
+              <div>
+                {/* <CheckCircle size={28} /> */}
+                <Circle size={28} />
+                <p>Dar banho nos gatos</p>
+              </div>
               <Trash size={24} />
             </div>
           </div>

@@ -147,3 +147,30 @@ color: var(--gray-200);
 .empty_tasks div p:first-child {
   font-weight: bold;
 }
+
+/* ---------------------------------- */
+
+.tasks_list {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--gray-350);
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.task div {
+  display: flex;
+  align-items: center;
+}
+
+.task div p {
+  margin-left: 12px;
+}
