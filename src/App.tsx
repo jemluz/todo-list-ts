@@ -23,15 +23,13 @@ export function App() {
           </form>
 
           <div className={styles.tasks_counter} >
-            <div>
-              <strong>Tarefas criadas</strong>
-              <span>0</span>
-            </div>
+            <strong className={styles.all_tasks} >
+              Tarefas criadas <span className={styles.count} >0</span>
+            </strong>
 
-            <div>
-              <strong>Tarefas concluídas</strong>
-              <span>0</span>
-            </div>
+            <strong className={styles.done_tasks}>
+              Tarefas concluídas <span className={styles.count}>0</span>
+            </strong>
           </div>
 
           <div className='empty_tasks'>

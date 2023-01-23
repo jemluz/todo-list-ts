@@ -92,7 +92,34 @@ color: var(--gray-200);
   justify-content: space-between;
 }
 
-/* .tasks_counter div {
-  width: 8.875rem;
-  display: flex;
-} */
+.tasks_counter strong {
+  font-size: 0.875rem;
+}
+
+.tasks_counter strong span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  margin-left: 8px;
+}
+
+.all_tasks {
+  color: var(--red-500);
+}
+
+.all_tasks span {
+  background: var(--red-500);
+}
+
+.done_tasks {
+  color: var(--green-500);
+}
+
+.done_tasks span {
+  background: var(--green-500);
+}
+
+.count {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--white);
+}
