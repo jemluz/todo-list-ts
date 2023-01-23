@@ -44,11 +44,11 @@ export function App() {
           <div className={styles.tasks_list}>
             <div className={styles.task}>
               <div>
-                {/* <CheckCircle size={28} /> */}
-                <Circle size={28} />
-                <p>Dar banho nos gatos</p>
+                <CheckCircle className={styles.checked_btn} size={28} weight="duotone" />
+                {/* <Circle className={styles.check_btn} size={28} weight="duotone" /> */}
+                <p className={styles.risked} >Dar banho nos gatos</p>
               </div>
-              <Trash size={24} />
+              <Trash className={styles.delete_btn} size={24} />
             </div>
           </div>
         </main>
