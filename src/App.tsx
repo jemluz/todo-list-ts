@@ -1,4 +1,5 @@
 import todoLogo from './assets/todo-logo.svg'
+import emptyTasks from './assets/empty-tasks.svg'
 import styles from './styles/App.module.css'
 import { CheckCircle, Circle, PlusCircle, Trash } from 'phosphor-react'
 
@@ -32,8 +33,8 @@ export function App() {
             </strong>
           </div>
 
-          <div className='empty_tasks'>
-            <img src="" alt="" />
+          <div className={styles.empty_tasks}>
+            <img src={emptyTasks} alt="" />
             <div>
               <p>Você ainda não tem tarefas cadastradas</p>
               <p>Crie tarefas e organize seus itens a fazer</p>
