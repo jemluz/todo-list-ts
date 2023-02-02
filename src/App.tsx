@@ -1,7 +1,7 @@
-import todoLogo from './assets/todo-logo.svg'
 import emptyTasks from './assets/empty-tasks.svg'
 import styles from './styles/App.module.css'
 import { CheckCircle, PlusCircle, Trash } from 'phosphor-react'
+import { Header } from './components/Header'
 
 export function App() {
   function addTask(event: any) {
@@ -21,9 +21,7 @@ export function App() {
     <div className="App">
       <div className={styles.wrapper} >
         {/* Header */}
-        <header className={styles.header} >
-          <img src={todoLogo} alt="Logo todo list" />
-        </header>
+        <Header />
 
         <main>
           {/* NewTaskForm */}
