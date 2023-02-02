@@ -1,9 +1,9 @@
-import emptyTasks from './assets/empty-tasks.svg'
 import styles from './styles/App.module.css'
 import { CheckCircle, Trash } from 'phosphor-react'
 import { Header } from './components/Header'
 import { NewTaskForm } from './components/NewTaskForm'
 import { TaskCounter } from './components/TaskCounter'
+import { EmptyTasks } from './components/EmptyTasks'
 
 export function App() {
   function deleteTask() {
@@ -22,15 +22,7 @@ export function App() {
         <main>
           <NewTaskForm />
           <TaskCounter />
-
-          {/* EmptyTask */}
-          <div className={styles.empty_tasks}>
-            <img src={emptyTasks} alt="" />
-            <div>
-              <p>Você ainda não tem tarefas cadastradas</p>
-              <p>Crie tarefas e organize seus itens a fazer</p>
-            </div>
-          </div>
+          <EmptyTasks />
 
           <div className={styles.tasks_list}>
             {/* TASK  */}
