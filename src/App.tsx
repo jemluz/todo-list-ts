@@ -1,7 +1,7 @@
 import todoLogo from './assets/todo-logo.svg'
 import emptyTasks from './assets/empty-tasks.svg'
 import styles from './styles/App.module.css'
-import { CheckCircle, Circle, PlusCircle, Trash } from 'phosphor-react'
+import { CheckCircle, PlusCircle, Trash } from 'phosphor-react'
 
 export function App() {
   function addTask() {
@@ -42,6 +42,7 @@ export function App() {
           </div>
 
           <div className={styles.tasks_list}>
+            {/* TASK  */}
             <div className={styles.task}>
               <div>
                 <CheckCircle className={styles.checked_btn} size={28} weight="duotone" />
@@ -54,6 +55,5 @@ export function App() {
         </main>
       </div>
     </div>
-
   )
 }
