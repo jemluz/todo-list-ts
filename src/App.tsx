@@ -1,14 +1,10 @@
 import emptyTasks from './assets/empty-tasks.svg'
 import styles from './styles/App.module.css'
-import { CheckCircle, PlusCircle, Trash } from 'phosphor-react'
+import { CheckCircle, Trash } from 'phosphor-react'
 import { Header } from './components/Header'
+import { NewTaskForm } from './components/NewTaskForm'
 
 export function App() {
-  function addTask(event: any) {
-    event.preventDefault()
-    console.log('Task criada!')
-  }
-
   function deleteTask() {
     console.log('Task excluída!')
   }
@@ -20,17 +16,11 @@ export function App() {
   return (
     <div className="App">
       <div className={styles.wrapper} >
-        {/* Header */}
         <Header />
 
         <main>
           {/* NewTaskForm */}
-          <form className={styles.new_task_form}>
-            <input type="text" placeholder='Adicione uma nova tarefa' />
-            <button type="submit" onClick={addTask} >
-              Criar <PlusCircle size={28} />
-            </button>
-          </form>
+          <NewTaskForm />
 
           {/* TaskCounter */}
           <div className={styles.tasks_counter} >
