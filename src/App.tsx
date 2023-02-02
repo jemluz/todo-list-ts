@@ -3,6 +3,7 @@ import styles from './styles/App.module.css'
 import { CheckCircle, Trash } from 'phosphor-react'
 import { Header } from './components/Header'
 import { NewTaskForm } from './components/NewTaskForm'
+import { TaskCounter } from './components/TaskCounter'
 
 export function App() {
   function deleteTask() {
@@ -19,19 +20,8 @@ export function App() {
         <Header />
 
         <main>
-          {/* NewTaskForm */}
           <NewTaskForm />
-
-          {/* TaskCounter */}
-          <div className={styles.tasks_counter} >
-            <strong className={styles.all_tasks} >
-              Tarefas criadas <span className={styles.count} >0</span>
-            </strong>
-
-            <strong className={styles.done_tasks}>
-              Tarefas concluídas <span className={styles.count}>0</span>
-            </strong>
-          </div>
+          <TaskCounter />
 
           {/* EmptyTask */}
           <div className={styles.empty_tasks}>
